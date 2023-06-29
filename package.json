@@ -1,6 +1,6 @@
 {
   "name": "joi_yup_converter",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Joi Yup Converter",
   "main": "index.js",
   "scripts": {
