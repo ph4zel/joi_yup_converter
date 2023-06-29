@@ -14,9 +14,9 @@ module.exports = (data, var_name, type_name, minify) => {
             .replaceAll('\t', '')
             .replaceAll('  ', '')
             .replaceAll('\r\n', '')
-        result = `import * as Yup from 'yup';import '../yup/convert_date';import '../yup/convert_num';export const ${var_name} = Yup.object(${str});export type ${type_name} = Yup.InferType<typeof ${var_name}>;`
+        result = `import * as Yup from 'yup';export const ${var_name} = Yup.object(${str});export type ${type_name} = Yup.InferType<typeof ${var_name}>;`
     } else {
-        result = `import * as Yup from 'yup';\nimport '../yup/convert_date'\nimport '../yup/convert_num'\nexport const ${var_name} = Yup.object(${str});\nexport type ${type_name} = Yup.InferType<typeof ${var_name}>;`
+        result = `import * as Yup from 'yup';\nexport const ${var_name} = Yup.object(${str});\nexport type ${type_name} = Yup.InferType<typeof ${var_name}>;`
     }
     return result
 }
