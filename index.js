@@ -3,6 +3,12 @@ const fs = require('fs')
 const joi2yup = require('./joi2yup')
 const yup2joi = require('./yup2joi')
 
+console.log(
+`Joi Yup Converter
+Version ${JSON.parse(fs.readFileSync('./package.json')).version}
+`
+)
+
 const helpText = 'Modes:\n-y, --yup: Convert from Joi to Yup\n-j, --joi: Convert from Yup to Joi\n\n(node) joi_yup_converter [mode] [target] [new file] [variable name] [type name (if --yup)] [minify (true or false)]';
 
 try {
