@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const fs = require('fs')
 const joi2yup = require('./joi2yup')
 const yup2joi = require('./yup2joi')

@@ -1,13 +1,41 @@
 {
   "name": "joi_yup_converter",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.6",
+  "description": "Joi Yup Converter",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ph4zel/joi_yup_converter.git"
+  },
+  "keywords": [
+    "joi",
+    "yup",
+    "converter",
+    "joi_yup",
+    "joi_yup_converter",
+    "yup_joi_converter",
+    "convert",
+    "yup",
+    "to",
+    "joi",
+    "convert",
+    "joi",
+    "to",
+    "yup"
+  ],
+  "author": "Seyed Fazel Alavi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ph4zel/joi_yup_converter/issues"
+  },
+  "homepage": "https://github.com/ph4zel/joi_yup_converter#readme",
+  "bin": {
+    "joi_yup_converter": "./index.js",
+    "j2y": "node j2y.js",
+    "y2j": "node y2j.js"
+  }
 }
