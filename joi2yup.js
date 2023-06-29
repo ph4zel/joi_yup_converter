@@ -7,6 +7,7 @@ module.exports = (data, var_name, type_name, minify) => {
         .replaceAll('date()', 'date().convert_date().nullable()')
         .replaceAll('boolean()', 'boolean().nullable()')
         .replaceAll('array().items', 'array().of')
+        .replaceAll(' :', ':')
     let result
     if (minify) {
         str = str
