@@ -5,7 +5,7 @@ const yup2joi = require('./yup2joi')
 
 console.log(
 `Joi Yup Converter
-Version ${JSON.parse(fs.readFileSync('./package.json')).version}
+Version 1.0.10
 `
 )
 
